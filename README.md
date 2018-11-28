@@ -58,7 +58,7 @@ java ChatApp
   ```
   or  
   ```
-  <connect:192.168.0.107:1211:server_name>  
+  <connect:1211:server_name> <ip_addr:192.168.0.107>  
   ```
   
 - Disconnect a port:  
