@@ -54,7 +54,11 @@ java ChatApp
   `<connect:1211:[IP_ADDRESS]>`  
   Say the IP address of server is 192.168.0.107:
   ```
-  <connect:1211:192.168.0.107>
+  <connect:192.168.0.107:1211>
+  ```
+  or  
+  ```
+  <connect:192.168.0.107:1211:server_name>  
   ```
   
 - Disconnect a port:  
