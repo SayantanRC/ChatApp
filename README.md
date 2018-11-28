@@ -92,6 +92,6 @@ java ChatApp
   ```
   
 - Close all connections and exit the program:
-```
-<exit>
-```
+  ```
+  <exit>
+  ```
