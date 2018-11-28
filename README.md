@@ -51,7 +51,7 @@ java ChatApp
   <my-ip>  
   ```
   This give a list network interface addresses. To connect to the server, use the following command:  
-  `<connect:1211> <ip_addr:[IP_ADDRESS]>`  
+  `<connect:[PORT]> <ip_addr:[IP_ADDRESS]>`  
   Say the IP address of server is 192.168.0.107:
   ```
   <connect:1211> <ip_addr:192.168.0.107>
