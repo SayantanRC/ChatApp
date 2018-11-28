@@ -3,11 +3,16 @@ A simple Java socket program based chat app
 
 ### Get the project
 1. Install Java if not present  
+Check if Java was installed by: `java -version`  
+If not:  
 ```
 sudo apt update  
-sudo apt install default-java  
+sudo apt install default-jdk  
 ```
-Check if Java was installed by: `java -version`  
+> <b>Optional</b>  
+> JVMs are located under `/usr/lib/jvm`. You can add a line under `/etc/environment` file:  
+> `JAVA_HOME="/usr/lib/jvm/default-java"`  
+> Also enter the command `source /etc/environment`  
 
 2. Clone or download:  
 ```
