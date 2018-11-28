@@ -64,7 +64,7 @@ java ChatApp
   ```
   
 - Send message to a particular peer over a particular port:
-  By default, if you are connected to several peers (independant of you being the server or the client) any message typed by you will go to all peers. To selectively send a message specify the port by `<port:[PORT]`. See the following example:  
+  By default, if you are connected to several peers (independant of you being the server or the client) any message typed by you will go to all peers. To selectively send a message specify the port by `<port:[PORT]>` before the message. See the following example:  
   > Say I am connecting to ports 2100, 2200, 2300:  
   > ```
   > <connect:2200>  
@@ -79,3 +79,19 @@ java ChatApp
   > ```
   > <port:2200> Hello port 2200!
   > ```
+
+- Send a file: (Warning: you will not be able to send or receive messages during file transfer)
+  To send a file to all your peers, use the `<file:[COMPLETE_FILE_PATH]>` command. Example:
+  ```
+  <file:/home/sayantan/cat.jpg>
+  ```
+  To send to a particular port, append `<port:[PORT]>` to the file command as done previously for sending normal text messages. Example:
+  ```
+  <port:3000> Sending ice cream to you!  
+  <port:3000> <file:/home/sayantan/ice-cream.jpg>  
+  ```
+  
+- Close all connections and exit the program:
+```
+<exit>
+```
