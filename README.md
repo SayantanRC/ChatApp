@@ -33,7 +33,8 @@ java ChatApp
 
 ### Usage
 
-- On running the program, you will get a blank screen. To send messages or files, you need to open a connection by typing commands.  
+- <b>Initial setup:</b>  
+  On running the program, you will get a blank screen. To send messages or files, you need to open a connection by typing commands.  
   1. First you need to open a port for a client to connect to. Say you want to open a port 2500. Type:
   `<add:2500:nickname_client>` or simply `<add:2500>`  
   2. Now, you need to connect a client to this port. On another instance of the program and type:
@@ -49,7 +50,7 @@ java ChatApp
 <connect:6000>
 ```
 
-- Connect to a server instance not running on the same machine:
+- <b>Connect to a server instance not running on the same machine:</b>  
   To connect to a server instance running on the network, we need IP address of the server. Say the server opens a port 1211, the IP address can be found by `<my-ip>` command.  
   ```
   <add:1211>  
@@ -66,13 +67,13 @@ java ChatApp
   <connect:1211:server_name> <ip_addr:192.168.0.107>  
   ```
   
-- Disconnect a port:  
+- <b>Disconnect a port:</b>  
   To disconnect a connection over a port, use the `<disconnect:[PORT]>` command. Example, disconnect port 2500:
   ```
   <disconnect:2500>  
   ```
   
-- Send message to a particular peer over a particular port:
+- <b>Send message to a particular peer over a particular port:</b>  
   By default, if you are connected to several peers (independant of you being the server or the client) any message typed by you will go to all peers. To selectively send a message specify the port by `<port:[PORT]>` before the message. See the following example:  
   > Say I am connecting to ports 2100, 2200, 2300:  
   > ```
@@ -89,7 +90,7 @@ java ChatApp
   > <port:2200> Hello port 2200!
   > ```
 
-- Send a file: (Warning: you will not be able to send or receive messages during file transfer)
+- <b>Send a file: (Warning: you will not be able to send or receive messages during file transfer)</b>  
   To send a file to all your peers, use the `<file:[COMPLETE_FILE_PATH]>` command. Example:
   ```
   <file:/home/sayantan/cat.jpg>
@@ -100,7 +101,7 @@ java ChatApp
   <port:3000> <file:/home/sayantan/ice-cream.jpg>  
   ```
   
-- Close all connections and exit the program:
+- <b>Close all connections and exit the program:</b>  
   ```
   <exit>
   ```
