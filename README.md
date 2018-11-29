@@ -16,8 +16,7 @@ sudo apt install default-jdk
 
 2. Clone or download:  
 ```
-mkdir -p ~/ChatApp  
-cd ~/ChatApp  
+cd ~
 git clone https://github.com/SayantanRC/ChatApp.git  
 ```
 
